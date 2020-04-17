@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: finance_tracker_production
   username: finance_tracker
   password: <%= ENV['FINANCE_TRACKER_DATABASE_PASSWORD'] %>
